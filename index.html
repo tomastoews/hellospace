@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Tomas Töws">
+    <link rel="stylesheet" href="css\fontawesome-all.css">
+    <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>HelloSpace</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark sticky-top bg-dark"> <!-- bg-dark -->
+        <a class="navbar-brand mx-auto" href="#">
+            <i class="fas fa-rocket"></i>
+            <span class="ml-1">HelloSpace</span>
+        </a>
+    </nav>
+
+    <!-- Area for search input -->
+    <header class="jumbotron jumbotron-fluid mb-0"> <!-- bg-dark pt-10 -->
+        <form class="col-sm-6" id="searchForm">
+            <div class="input-group input-group-lg">
+                <input class="form-control text-white text-center" name="input" type="text" placeholder="Suchen" aria-label="Suchen" autocomplete="false"> <!-- bg-dark -->
+                <div class="input-group-append">
+                    <button class="btn btn-outline-light border-white" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button> <!-- <i class="fas fa-rocket"></i> -->
+                </div>
+            </div>
+        </form>
+    </header>
+
+    <!-- Area for results output -->
+    <main>
+        <div class="container">
+            <div id="messageContainer"></div>
+            <div id="outputLoadProgressContainer">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+                </div>
+            </div>
+            <div class="card-columns" id="outputContainer"></div>
+        </div>
+    </main>
+
+    <!-- Modal for displaying details -->
+    <div class="modal fade" id="DetailsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="DetailsModalTitle">Modal title</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-4"><img id="DetailsModalImage"></div>
+                        <div class="col-8">
+                            <p id="DetailsModalDescription"></p>
+                            <p id="DetailsModalKeywords"></p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Schließen</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/libs/popper.js"></script>
+    <script src="js\bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>

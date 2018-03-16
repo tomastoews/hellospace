@@ -1,0 +1,65 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: transparent!important;
+}
+
+header {
+    background-image: url('../images/bg_2.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin-top: -56px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10rem 0!important;
+}
+
+header form {
+    margin-top: 56px;
+}
+
+header .form-control {
+    background: transparent;
+}
+
+header .form-control:focus {
+    background: transparent;
+}
+
+.card, .card:hover {
+    text-decoration: none;
+    text-decoration-style: none;
+    text-decoration-line: none;
+}
+
+main {
+    padding: 20px 0;
+}
+
+#DetailsModalImage {
+    width: 100%;
+}
+
+#outputContainer {
+    display: block;
+}
+
+#outputLoadProgressContainer {
+    display: none;
+}
+
+#DetailsModalKeywords {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+
+#DetailsModalKeywords .badge {
+    margin: 0 5px 5px 0;
+}

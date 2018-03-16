@@ -1,0 +1,12 @@
+{
+  "name": "hellospace",
+  "version": "1.0.0",
+  "description": "WebApp for fetching space and astronomy images using the NASA API.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tomas Töws",
+  "license": "ISC",
+  "dependencies": {}
+}
