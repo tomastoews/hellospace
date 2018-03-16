@@ -8,7 +8,8 @@ nav {
 }
 
 header {
-    background-image: url('../images/bg_2.jpeg');
+    background-image: url('../images/bg_1.jpeg');
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -25,6 +26,10 @@ header form {
 
 header .form-control {
     background: transparent;
+}
+
+header .form-control::placeholder {
+    color: #fff;
 }
 
 header .form-control:focus {
