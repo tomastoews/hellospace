@@ -1,7 +1,7 @@
 # HelloSpace
 
-> WebApp for fetching space and astronomy images using the NASA API.
+WebApp for fetching space and astronomy images using the NASA API.
 
-# Live Preview
+# Live Demo
 
-> https://tomastoews.github.io/hellospace/
+https://tomastoews.github.io/hellospace/
